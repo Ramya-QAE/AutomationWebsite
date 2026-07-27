@@ -43,8 +43,9 @@ public class BaseTest {
 	
 	public static void exit()
 	{
-		driver1.get().quit(); 
-		driver1.remove();
+	
+		//driver1.get().quit(); 
+		//driver1.remove();
 		
 	}
 	

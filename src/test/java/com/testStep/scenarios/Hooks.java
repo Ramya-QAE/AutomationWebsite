@@ -21,6 +21,6 @@ public class Hooks {
 	public void tearDownScenario()
 	{
 	
-		BaseTest.exit();
+	//	BaseTest.exit();
 	}
 }

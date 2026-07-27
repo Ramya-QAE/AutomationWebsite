@@ -52,10 +52,12 @@ public class CommonUtilities {
 		TakesScreenshot screen = ((TakesScreenshot) BaseTest.getDriver()); 
 		
 		File src = screen.getScreenshotAs(OutputType.FILE); 
-		
-		File dest = new File( "C:\\Users\\Ramya\\eclipse-workspace\\AutomationWebsite\\target\\Screenshots\\"+Method + ".png");
-		
-		FileUtils.copyFile(src, dest); 
+		String screenshotDir = System.getProperty("user.dir") + File.separator + "target" + File.separator + "Screenshots";
+	    File dest = new File(screenshotDir + File.separator + Method + ".png");
+	    FileUtils.copyFile(src, dest);
+//		File dest = new File( "C:\\Users\\Ramya\\eclipse-workspace\\AutomationWebsite\\target\\Screenshots\\"+Method + ".png");
+//		
+//		FileUtils.copyFile(src, dest); 
 		}
 		catch(IOException e)
 		{

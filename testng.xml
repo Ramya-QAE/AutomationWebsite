@@ -4,6 +4,7 @@
 <listeners>
 <listener class-name = "com.commonUtils.TestListener"/>
 
+<listener class-name="com.commonUtils.AnnotationTransformer"/>
 </listeners>
   <test thread-count="5" name="Test">
     <classes>
