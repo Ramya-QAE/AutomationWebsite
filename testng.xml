@@ -3,7 +3,7 @@
 <suite name="Suite">
 <listeners>
 <listener class-name = "com.commonUtils.TestListener"/>
-<listener class-name = "com.commonUtils.RetryAnalyzer"/>
+
 </listeners>
   <test thread-count="5" name="Test">
     <classes>
